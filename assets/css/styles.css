@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans')
+
+/* ================================================================
+                         Global Styles
+  ================================================================= */
+*{
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	position: relative;
+    line-height: 1em;
+    height: 100%;
+}
+
+p {
+  display: inline-block;
+}
+
+.wrapper {
+  font-family: 'Work Sans', sans-serif;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* ================================================================
+                         Navigation Bar
+  ================================================================= */
+
+nav ul {
+  margin: 50px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav li {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ccc;
+  font: 20px/1 "Arial Black", Verdana, sans-serif;
+  display: inline;
+  border-right: 1px solid #aaa;
+  padding: 0 12px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+nav li a:hover {
+  color: #666;
+}
+nav li.active a{
+  font-weight: bold;
+  color: #333;
+}
+
+/* ================================================================
+                         Image Styles
+  ================================================================= */
+header{
+  width: 50%;
+}
+
+.coffeeImage {
+  width: 31.25em;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid;
+  transition: all .5s;
+}
+
+/* ================================================================
+                         Psudo Classes
+  ================================================================= */
+
+.profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* ================================================================
+                        Media Queries
+  ================================================================= */
+
+@media (min-width: 769px) {
+  .wrapper {
+    width: 70%;
+    max-width: 770px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .col {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .one {
+    width: 40%;
+
+  }
+
+  .two {
+    width: 60%;
+  }
+
+  .social {
+      z-index: 1;
+  }
+
+}
+
+@media (max-width: 769px) {
+    
+}
