@@ -1,93 +1,149 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans')
-
 /* ================================================================
                          Global Styles
   ================================================================= */
-*{
+ *{
     box-sizing: border-box;
+ }
+
+ html, body {
+    line-height: 0.5em;
+    margin: 0;
+ }
+
+ p {
+    font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.8em;
+    font-weight: 300;
+    padding-bottom: 1em;
+    word-spacing: 0.5px;
+ }
+
+ #name {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-style: bold;
+    padding-bottom: 1em;
+    top: 10px;
+    left: -97px;
+    font-size: 1.5em;
+    color: #fff;
+ }
+
+ .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
-body{
-	font-family: 'Work Sans', sans-serif;
-	position: relative;
-    line-height: 1em;
-    height: 100%;
-}
-
-p {
-  display: inline-block;
-}
-
-.wrapper {
-  font-family: 'Work Sans', sans-serif;
-  width: 70%;
-  margin: 0 auto;
-}
 
 /* ================================================================
                          Navigation Bar
   ================================================================= */
 
-nav ul {
-  margin: 50px;
-  list-style-type: none;
-  text-decoration: none;
-}
+ .main-nav ul {
+    margin: 50px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+ }
 
-nav li {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ccc;
-  font: 20px/1 "Arial Black", Verdana, sans-serif;
-  display: inline;
-  border-right: 1px solid #aaa;
-  padding: 0 12px;
+ .main-nav li {
+    display: inline;
+    text-align: center;
+ }
 
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+/* THIS DOESNT WORK */
+ .main-nav li:last-child {
+   border-right: none;
+ }
 
-li:last-child {
-  border-right: none;
-}
 
-nav li a:hover {
-  color: #666;
-}
-nav li.active a{
-  font-weight: bold;
-  color: #333;
-}
+ .main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font: 20px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-right: 1px solid #aaa;
+    padding: 0 12px;
+ }
+
+ .main-nav li a:hover {
+    color: #666;
+ }
+ .main-nav li.active a{
+    font-weight: bold;
+    color: #fff
+ }
+
+/* ================================================================
+                        Positoning
+  ================================================================= */
+
+ .PleaseWork {
+    min-width: 318px;
+    width: 50%;
+    min-height: 100vh;
+    float: right;
+    overflow: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: darkcyan;
+    z-index: 5;
+ }
+
+/* Centering and padding social icons */
+ .social {
+    text-align: center;
+    padding-top: 1em;
+ }
+
+/* BROKEN!!! IMAGE IS BEING SHOVED INTO RIGHT NAV */
+ .background {
+    float:left;
+    z-index: 1;
+ }
+
+/* Sticking social icons to the bottom */
+ .stickyFooter {
+    min-height: 100%;
+    margin-bottom: -50px;
+ }
 
 /* ================================================================
                          Image Styles
   ================================================================= */
-header{
-  width: 50%;
-}
 
-.coffeeImage {
-  width: 31.25em;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+ .coffeeImage {
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-}
+ }
 
-.profile-image {
+ .enzoIcon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+ }
+
+ .profile-image {
   margin-top: 50px;
+  margin-bottom: 1em;
+  padding: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid;
+  border: 3px solid #fff;
   transition: all .5s;
-}
+  align: center;
+ }
+
+.imageCycle {
+
+ }
 
 /* ================================================================
                          Psudo Classes
@@ -95,12 +151,12 @@ header{
 
 .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
-}
+ }
 
 /* ================================================================
                         Media Queries
   ================================================================= */
-
+/*
 @media (min-width: 769px) {
   .wrapper {
     width: 70%;
@@ -110,7 +166,7 @@ header{
   }
 
   .col {
-    float: left;
+    float: right;
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -131,5 +187,6 @@ header{
 }
 
 @media (max-width: 769px) {
-    
+
 }
+*/
