@@ -14,11 +14,11 @@
     font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
     text-align: justify;
     color: #fff;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     line-height: 1.8em;
     font-weight: 300;
     padding-bottom: 1em;
-    word-spacing: 0.5px;
+    word-spacing: 0.3px;
  }
 
  #name {
@@ -37,6 +37,9 @@
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
+    background-image: url("../img/concrete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
