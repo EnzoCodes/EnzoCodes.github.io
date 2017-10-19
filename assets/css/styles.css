@@ -7,18 +7,21 @@
 
  html, body {
     line-height: 0.5em;
+    height: 100%;
     margin: 0;
  }
 
  p {
     font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
     text-align: justify;
+    max-width: 290px;
     color: #fff;
     letter-spacing: 0.2px;
     line-height: 1.8em;
     font-weight: 300;
     padding-bottom: 1em;
     word-spacing: 0.3px;
+    margin: 0 auto;
  }
 
  #name {
@@ -40,6 +43,8 @@
     background-image: url("../img/concrete.png");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 
@@ -47,11 +52,16 @@
                          Navigation Bar
   ================================================================= */
 
- .main-nav ul {
-    margin: 50px;
+ ul {
     list-style: none;
     text-decoration: none;
     text-align: center;
+    display: inline;
+ }
+
+ nav {
+    text-align: center;
+    margin: 0 auto;
  }
 
  .main-nav li {
@@ -59,18 +69,13 @@
     text-align: center;
  }
 
-/* THIS DOESNT WORK */
- .main-nav li:last-child {
-   border-right: none;
- }
-
-
  .main-nav li a {
     text-decoration: none;
     color: #fff;
     font: 20px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
     border-right: 1px solid #aaa;
     padding: 0 12px;
+    text-align: center;
  }
 
  .main-nav li a:hover {
@@ -103,16 +108,12 @@
     padding-top: 1em;
  }
 
-/* BROKEN!!! IMAGE IS BEING SHOVED INTO RIGHT NAV */
- .background {
-    float:left;
-    z-index: 1;
- }
 
 /* Sticking social icons to the bottom */
- .stickyFooter {
-    min-height: 100%;
-    margin-bottom: -50px;
+
+ .footer,
+ .push {
+     height: 50px;
  }
 
 /* ================================================================
@@ -152,44 +153,56 @@
                          Psudo Classes
   ================================================================= */
 
-.profile-image:hover {
+ .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
  }
 
+
+ .main-nav li:last-child a {
+    border-right: none;
+ }
+
 /* ================================================================
-                        Media Queries
+                             Contact Page
+================================================================= */
+
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 50%;
+}
+
+
+
+
+/* ================================================================
+                         Portfolio Page
   ================================================================= */
-/*
-@media (min-width: 769px) {
-  .wrapper {
-    width: 70%;
-    max-width: 770px;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .col {
-    float: right;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .one {
-    width: 40%;
-
-  }
-
-  .two {
-    width: 60%;
-  }
-
-  .social {
-      z-index: 1;
-  }
-
-}
-
-@media (max-width: 769px) {
-
-}
-*/
