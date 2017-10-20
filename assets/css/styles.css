@@ -208,25 +208,21 @@ input[type=submit]:hover {
 
 /* ================================================================
                          Portfolio Page
-  ================================================================= */
+  =================================================================
 
   .imageGalleryWrap {
     width: 60%;
-    overflow: auto;
-    float: left;
-    padding: 1em;
+    overflow: hidden;
+    padding: 5px;
     background-color: darkslategrey;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    border-right: 4px solid darkslategrey;
 }
 
- .galleryInner{
-    margin: 0 auto;
-    padding: 10px;
- }
  .gallery {
     position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    float: left;
+    padding: 5px;
 
 }
 
@@ -243,9 +239,44 @@ input[type=submit]:hover {
     text-align: -webkit-match-parent;
  }
 
- h3 {
-    padding: 1em 0px 0.25em 10px;
-    line-height: 1;
-    font-size: 2em;
-    width: 60%;
- }
+
+ */
+
+
+ .gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery img-row {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery img-row img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+
+h3 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
