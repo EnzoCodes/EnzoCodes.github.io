@@ -42,7 +42,7 @@
     width: 100%;
     margin: 0 auto;
 
-    background-image: url("../img/concrete.png");
+    background-image: url("../img/stardust.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
@@ -102,7 +102,7 @@
     overflow: auto;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: darkcyan;
+    background-color: #148ca3;
     z-index: 5;
  }
 
@@ -170,11 +170,15 @@
                              Contact Page
 ================================================================= */
 
+label {
+    color:#fff;
+}
+
 /* Add a background color and some padding around the form */
 .contact {
     border-radius: 5px;
     background-color: #f2f2f2;
-    background-image: url("../img/concrete.png");
+    background-image: url("../img/stardust.png");
     padding: 150px 20px 20px 80px;
     max-width: 50%;
 }
@@ -192,7 +196,7 @@
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: darkcyan;
+    background-color: #148ca3;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -203,7 +207,7 @@ input[type=submit] {
 /* When moving the mouse over the submit button, turn white */
 input[type=submit]:hover {
     background-color: #fff;
-    color: darkcyan;
+    color: #148ca3;
 }
 
 /* ================================================================
@@ -213,25 +217,15 @@ input[type=submit]:hover {
     max-width: 60%;
  }
 
- .gallery {
-  width: 60%;
-  margin: 0 auto;
-  padding: 5px;
-  background: #fff;
-}
-
-
 .gallery .img-row {
   position: relative;
   float: left;
-  padding: 5px;
+  padding: 15px;
+  z-index: 1
 }
 
-.gallery .img-row img {
-  display: inline-block;
-  width: 200px;
-  transition: .1s transform;
-  transform: translateZ(0);
+.galleryInner {
+    padding-left: 15px;
 }
 
 h3 {
@@ -239,6 +233,17 @@ h3 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  color: #fff;
+  padding-right: 85px;
+}
+
+ .galleryText {
+    background-color: #148ca3;
+    z-index: 5;
+    color: #fff;
+    position: absolute;
+    padding: 10px 33px;
+    top: 127px;
 }
 
 .cf:before, .cf:after {
