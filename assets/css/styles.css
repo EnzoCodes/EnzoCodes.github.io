@@ -41,7 +41,7 @@
  .wrapper {
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
+
     background-image: url("../img/concrete.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,3 +209,43 @@ input[type=submit]:hover {
 /* ================================================================
                          Portfolio Page
   ================================================================= */
+
+  .imageGalleryWrap {
+    width: 60%;
+    overflow: auto;
+    float: left;
+    padding: 1em;
+    background-color: darkslategrey;
+}
+
+ .galleryInner{
+    margin: 0 auto;
+    padding: 10px;
+ }
+ .gallery {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+ .img-row {
+    float: left;
+    width: 15%;
+    margin: 2.5%;
+    background-color: darkslategrey;
+    color: #bdc3c7;
+ }
+
+ li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+ }
+
+ h3 {
+    padding: 1em 0px 0.25em 10px;
+    line-height: 1;
+    font-size: 2em;
+    width: 60%;
+ }
