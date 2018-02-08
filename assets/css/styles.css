@@ -1,56 +1,4 @@
 /* ================================================================
-                         Global Styles
-  ================================================================= */
- /* *{
-    box-sizing: border-box;
- } */
-
-/* styling body */
- /* html, body {
-    line-height: 0.5em;
-    height: 100%;
-    margin: 0;
-    font-family: 'Open Sans', Arial, "Helvetica Neue", sans-serif;
- } */
-/* styling 'about me' blurb */
- /* p {
-    font-family: 'Open Sans', Arial, "Helvetica Neue", sans-serif;
-    text-align: justify;
-    max-width: 290px;
-    color: #fff;
-    letter-spacing: 0.2px;
-    line-height: 1.8em;
-    font-weight: 300;
-    padding-bottom: 1em;
-    word-spacing: 0.3px;
-    margin: 0 auto;
- }
-
- #name {
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 2em;
-    text-align: center;
-    font-style: bold;
-    padding-bottom: 1em;
-    top: 10px;
-    left: -97px;
-    font-size: 1.5em;
-    color: #fff;
- }
-
- .wrapper {
-    width: 100%;
-    margin: 0 auto;
-
-    background-image: url("../img/stardust.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    margin-bottom: -50px;
-}
- */
-
-/* ================================================================
                          Navigation Bar
   ================================================================= */
   * {
@@ -63,7 +11,7 @@
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  .hamburger {
+  /* .hamburger {
     position: fixed;
     z-index: 9999;
     padding: 15px;
@@ -105,10 +53,6 @@
     transition: -webkit-transform 0.3s;
     transform: scale(1.2) rotate(5deg);
   }
-  /* nav .logo img:after {
-    transition: -webkit-transform 0.3s;
-    transform: scale(1) rotate(0deg);
-  } */
 
   nav a {
     display: block;
@@ -163,25 +107,31 @@
   .sidenav-active nav, .sidenav-active .main, .sidenav-active .hamburger, .sidenav-active .cover {
     -webkit-transform: translateX(225px);
             transform: translateX(225px);
-  }
+  } */
 
-  .noscroll {
-    position: relative;
+  /* ================================================================
+                          CONTENT
+    ================================================================= */
+
+  .container {
     overflow: hidden;
+    width:100%;
+    margin:0px;
   }
 
-  section {
+  .zone {
     color: white;
     height: 100vh;
     line-height: 100vh;
     text-align: center;
   }
-  section h1 {
+  .zone h1 {
     font-size: 1.75em;
   }
-  section h1, section p {
+  .zone h1, .zone p {
     margin: 0;
   }
+
   section:nth-child(1) {
     background-color: #7CB342;
   }
@@ -197,100 +147,18 @@
             box-shadow: -4px 0 8px rgba(100, 100, 100, 0.5);
   }
 
-/* ================================================================
-                        Positoning
-  ================================================================= */
-/*
- .PleaseWork {
-    min-width: 318px;
-    width: 40%;
-    min-height: 100vh;
-    float: right;
-    overflow: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-    background-color: #148ca3;
-    z-index: 5;
- } */
-
-/* Centering and padding social icons */
- /* .social {
-    text-align: center;
-    padding-top: 1em;
- } */
-
-
-/* Sticking social icons to the bottom */
-
- /* .footer,
- .push {
-     height: 50px;
- } */
-
-/* ================================================================
-                         Image Styles
-  ================================================================= */
-/*
- .coffeeImage {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
- }
-
- .enzoIcon {
-    width: 150px;
-    height: 150px;
+  /* .aboutBox {
     margin: 0 auto;
-    margin-bottom: 5em;
- }
-
- .profile-image {
-  margin-top: 50px;
-  margin-bottom: 1em;
-  padding: 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  transition: all .5s;
-  align: center;
- }
-
-.imageCycle {
-
- } */
-
-/* ================================================================
-                         Psudo Classes
-  ================================================================= */
-
- /* .profile-image:hover {
-     transform: scale(1.2) rotate(5deg);
- }
+    line-height: normal;
+    text-align: justify;
+    background: grey;
+    opacity: 0.8;
+    width: 25em;
+    height: 25em;
+  } */
 
 
- .main-nav li:last-child a {
-    border-right: none;
- } */
-
-/* ================================================================
-                             Contact Page
-================================================================= */
-/*
-label {
-    color:#fff;
-} */
-
-/* Add a background color and some padding around the form */
-.contact {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    background-image: url("../img/stardust.png");
-    padding: 150px 20px 20px 80px;
-    max-width: 50%;
-}
-
- input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
@@ -321,50 +189,6 @@ input[type=submit]:hover {
                         Arrow Zone
  =================================================================*/
 
- .arrowSeperator {
- 	display: block;
- 	text-align: center;
- 	border: 1px solid #ddd;
- 	width: 100%;
- 	height: 0;
- 	position: relative;
- }
-
- .arrowSeperator:before{
- 	content:'';
- 	width: 0;
- 	height: 0;
- 	border-left: 15px solid transparent;  /* this is the length of the side of the arrow */
- 	border-right: 15px solid transparent; /* this is the length of the side of the arrow */
- 	border-bottom: 15px solid #ddd; /* set to same color as the line, this is the height of the arrow */
- 	position: absolute;
- 	bottom: 100%;
- 	left: 50%; /* used to center arrow */
- 	right: 50%; /* used to center arrow */
- 	margin: 0 -15px; /* left & right offset need to match the width of the arrow to center arrow */
- 	z-index:1;
- }
-
- /* Bottom of first #171717 */
- /* Top of Second  */
-
-
- /* this arrow lays over the other arrow */
- /* offset slightly to show a line */
- .arrowSeperator:after{
- 	content:'';
- 	width: 0;
- 	height: 0;
- 	border-left: 15px solid transparent; /* this is the length of the side of the arrow */
- 	border-right: 15px solid transparent; /* this is the length of the side of the arrow */
- 	border-bottom: 15px solid #fff; /* set to color of background, this is the height of the arrow */
- 	position: absolute;
- 	bottom: 100%;
- 	left: 50%; /* used to center arrow */
- 	right: 50%; /* used to center arrow */
- 	margin: 0 -15px -2px -15px;	/* left & right offset need to match the width of the arrow to center arrow */
- 	z-index: 2;
- }
 
 /* ====================================== */
  .one {
@@ -390,47 +214,3 @@ input[type=submit]:hover {
    -o-background-size: cover;
    background-size: cover;
  }
-
-/* =================================== */
- /* .imageGalleryWrap {
-    max-width: 60%;
- }
-
-.gallery .img-row {
-  position: relative;
-  float: left;
-  padding: 15px;
-  z-index: 1
-}
-
-.galleryInner {
-    padding-left: 15px;
-}
-
-h3 {
-  margin: 40px 0;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  padding-right: 85px;
-}
-
- .galleryText {
-    background-color: #148ca3;
-    z-index: 5;
-    color: #fff;
-    position: absolute;
-    padding: 10px 33px;
-    top: 127px;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-} */
