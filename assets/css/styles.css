@@ -13,6 +13,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  background-image: url("../img/tessuract.jpg");
+  background-repeat: no-repeat;
 }
 
 a {
@@ -116,19 +118,19 @@ a {
 }
 @media (max-width: 1500px) {
   .profile .picture-resume img {
-    width: 140px;
+    width: 180px;
   }
 }
 @media (max-width: 1200px) {
   .profile .picture-resume img {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
   }
 }
 @media (max-width: 1500px) {
   .profile .picture-resume {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
 }
 @media (max-width: 1200px) {
